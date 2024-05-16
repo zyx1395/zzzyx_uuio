@@ -3,7 +3,10 @@ from Common import NumOne
 from test_data import data
 from  selenium.webdriver.common.by import By
 import sys
-sys.path.append('D:\Myproject\python_project\test_resulet')
+import os
+curPath = os.path.abspath(os.path.dirname('D:\Myproject\python_project\test_resulet'))
+rootPath = os.path.abspath(os.path.dirname(curPath) + os.path.sep + ".")
+sys.path.append(rootPath)
 driver=webdriver.Chrome()
 driver.implicitly_wait(10)
 url= data.url['url']
