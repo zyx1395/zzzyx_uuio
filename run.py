@@ -2,6 +2,8 @@ from selenium import webdriver
 from Common import NumOne
 from test_data import data
 from  selenium.webdriver.common.by import By
+import sys
+sys.path.append('D:\Myproject\python_project\test_resulet')
 driver=webdriver.Chrome()
 driver.implicitly_wait(10)
 url= data.url['url']
